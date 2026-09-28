@@ -4,3 +4,316 @@
     padding: 0;
     margin: 0;
 }
+
+/* CSS variables */
+:root{
+    --bg-dark: #090d16;
+    --bg-card: #111827;
+    --primary: #6366f1;
+    --primary-hover: #4f46e5;
+    --text-main: #f9fafb;
+    --text-muted: #9ca3af;
+    --border-color: #374151;
+    --accent-color: #10b981;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    --transition-speed: 0.2;
+}
+
+.site-header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(9, 13, 25, 0.9);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo-icon{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--text-main);
+    gap: 0.5rem;
+}
+
+.brand-logo{
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+.nav-link{
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color var(--transition-speed);
+}
+
+.nav-link:hover{
+    color: var(--text-main);
+}
+
+/* Hero section */
+.section-hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 1.5rem 4rem 1.5rem;
+    max-width: 80%;
+    margin: 0 auto; /* Will center an element on page, only works if you have width or max-width declared in this block*/
+    gap: 2rem;
+}
+
+.span-hero-text{
+    flex: 2;
+}
+
+.span-hero-gif{
+    flex: 1;
+}
+
+.hero-gif{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-title{
+    font-size: 3rem;
+    line-height: 1.15;
+    font-weight: 800;
+    margin-bottom: 1.25rem;
+}
+
+.hero-subtitle{
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+}
+
+.cta-group{
+    display: flex;
+    gap: 1rem;
+}
+
+.section-header{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Platform Banners Section */
+.section-container{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+.platform-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.platform-banner{
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 8px;
+    transition: transform var(--transition-speed), border var(--transition-speed);
+}
+
+.platform-banner:hover{
+    transform: translateY(-4px);
+    border: 3px solid var(--primary);
+}
+
+.platform-title{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.platform-description{
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+}
+
+/* Pricing matrix */
+.pricing-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.pricing-card{
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform var(--transition-speed);
+}
+
+.pricing-card.featured{
+    border: 2px solid var(--primary);
+    background-color: rgba(99, 102, 241, 0.04);
+    transform: scale(1.03);
+}
+
+.popular-tag{
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.2rem 0.75rem;
+    border-radius: 9999px;
+    text-transform: uppercase;
+}
+
+.tier-name{
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.tier-desc{
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+}
+
+.tier-price{
+    margin-bottom: 1.5rem;
+}
+
+.price-unit{
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.price-value{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.tier-features{
+    list-style-type: none;
+    margin-bottom: 2rem;
+    flex-grow: 1; /* pushes button to bottum evenly */
+}
+
+/* calculator form */
+.form-wrapper{
+
+}
+
+.lead-form{
+    border-radius: 5px;
+    background-color: var(--bg-card);
+    padding: 0.5rem;
+}
+
+.form-group{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0.4rem;
+}
+
+.form-label{
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #fff;
+}
+
+.input-hint{
+    font-size: 0.7rem;
+    color: var(--text-muted)
+}
+
+.form-control{
+    width: 100%;
+    height: 2rem;
+    border-radius: 5px;
+    margin-bottom: 0.3rem;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* top right bottum left */
+    /* [top/bottum]rem [bottum/left]rem */
+    /* [top/bottum/left/right]rem */
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid;
+    cursor: pointer;
+    transition: 
+    background-color var(--transition-speed), 
+    transform var(--transition-speed), 
+    border-color var(--transition-speed);
+}
+
+/* for keyboard browsing using tab key */
+.btn:focus-visible{
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.btn-primary:hover{
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.btn-secondary{
+    background-color: transparent;
+    color: var(--text-main);
+    border-color: var(--border-color);
+}
+
+.btn-secondary:hover{
+    background-color: var(--bg-card);
+    border-color: var(--text-muted);
+}
+
+.btn-outline{
+    background-color: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline:hover{
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.btn-block{
+    display: flex;
+    width: 100%;
+}
+
+.btn-sm{
+    padding: 0.5rem, 1rem;
+    font-size: 1.125rem;
+}

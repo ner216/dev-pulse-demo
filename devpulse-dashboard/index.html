@@ -20,31 +20,36 @@
     </header>
     <main>
         <section id="hero" class="section-hero">
-            <h1 class="hero-title">Buy here Pay here</h1>
-            <p class="hero-subtitle">Keep buying here paying here</p>
-            <div class="cta-group">
-                <a href="#pricing" class="btn btn-secondary">See our Plans</a>
-                <a href="#register" class="btn btn-primary">Create a free Cluster</a>
-            </div>
+            <span class="span-hero-text">
+                <h1 class="hero-title">Buy here Pay here</h1>
+                <p class="hero-subtitle">Join the thousands of businesses that choose Dev Pulse</p>
+                <div class="cta-group">
+                    <a href="#pricing" class="btn btn-secondary">See our Plans</a>
+                    <a href="#register" class="btn btn-primary">Create a free Cluster</a>
+                </div>
+            </span>
+            <span class="span-hero-gif">
+                <img src="agp_studios-earth.gif" alt="Spinning Globe" class="hero-gif">
+            </span>
         </section>
         <!-- Platform Banners section -->
         <section id="platform" class="section-container">
             <header class="section-header">
-            <h2 class="section-title">Designed for High Throughput</h2>
+                <h2 class="section-title">Designed for High Throughput</h2>
             </header>
             <div class="platform-grid">
-            <article class="platform-banner">
-                <h3 class="platform-title">Latency Tracking</h3>
-                <p class="platform-description">Optimizations made to deliver leading class low latency</p>
-            </article>
-            <article class="platform-banner">
-                <h3 class="platform-title">Log Aggregation</h3>
-                <p class="platform-description">Simplified logging to optimize monitoring</p>
-            </article>
-            <article class="platform-banner">
-                <h3 class="platform-title">Auto Remediation</h3>
-                <p class="platform-description">Advanced fault recovery and stability</p>
-            </article>
+                <article class="platform-banner">
+                    <h3 class="platform-title">Latency Tracking</h3>
+                    <p class="platform-description">Optimizations made to deliver leading class low latency</p>
+                </article>
+                <article class="platform-banner">
+                    <h3 class="platform-title">Log Aggregation</h3>
+                    <p class="platform-description">Simplified logging to optimize monitoring</p>
+                </article>
+                <article class="platform-banner">
+                    <h3 class="platform-title">Auto Remediation</h3>
+                    <p class="platform-description">Advanced fault recovery and stability</p>
+                </article>
             </div>
         </section>
         <!-- pricing matrix -->
@@ -68,7 +73,7 @@
                     </ul>
                     <a href="#register" class="btn btn-outline btn-block">Deploy First Cluster</a>
                 </article>
-                <article class="pricing-card-featured">
+                <article class="pricing-card featured">
                     <div class="popular-tag">Recommended</div>
                     <h3 class="tier-name">Pro Cluster</h3>
                     <p class="tier-desc">For medium size businesses</p>
@@ -99,7 +104,7 @@
                 </article>
             </div>
         </section>
-        <!-- Calculator / Get API keys -->
+        <!-- Calculator -->
         <section id="calculator" class="section-container">
             <div class="form-wrapper">
                 <header>
@@ -109,12 +114,13 @@
                 <form action="#" method="get" class="lead-form">
                     <div class="form-group">
                         <label for="cluster-nodes" class="form-label">Cluster Nodes</label>
-                        <input type="number" name="cluster-nodes" id="cluster-nodes" step="1" min="1" max="5000" placeholder="1" required>
+                        <input type="number" name="cluster-nodes" id="cluster-nodes" class="form-control" step="1" min="1" max="5000" placeholder="1" required>
                     </div>
-                    <div class="form-group"></div>
+                    <div class="form-group">
                         <label for="monthly-throughput" class="form-label">Estimated Monthly Throughput</label>
                         <input type="number" name="monthly-throughput" id="monthly-throughput" class="form-control" min="10" max="5000000" step="1000" placeholder="500">
                         <span class="input-hint">Min: 10, Max: 5000000</span>
+                    </div>
                     <div class="form-group">
                         <label for="provision-tier" class="form-label">Target Tier Selection</label>
                         <select name="provision-tier" id="provision-tier" class="form-control">
@@ -139,11 +145,12 @@
                 <form action="#" method="post" class="lead-form">
                     <div class="form-group">
                         <label for="name" class="form-label">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Bill Bradley" required>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Bill Bradley" required>
                     </div>
-                    <div class="form-group"></div>
+                    <div class="form-group">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" name="email" id="email" class="form-control" placeholder="abcd@yahoo.com" required>
+                    </div>
                     <div class="form-group">
                         <label for="provision-tier" class="form-label">Target Tier Selection</label>
                         <select name="provision-tier" id="provision-tier" class="form-control">
