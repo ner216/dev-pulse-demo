@@ -1,2 +1,3 @@
-# CSI-3150-Web-Dev
-Repository created for undergraduate web development course.
+# Dev Pulse 
+
+An introductory web development project to build a website for a hypothetical company
