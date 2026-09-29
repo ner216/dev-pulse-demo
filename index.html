@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevPulse</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="site-header">
@@ -58,7 +58,7 @@
         <!-- pricing matrix -->
         <section id="pricing" class="section-container">
             <header class="section-header">
-                <h3 class="section-title">Predictable, Transparent Pricing</h3>
+                <h2 class="section-title">Predictable, Transparent Pricing</h3>
                 <p class="section-subtitle">Scale seamlessly from first transaction to the 100th transaction.</p>
             </header>
             <div class="pricing-grid">
@@ -148,12 +148,12 @@
                     <form action="#" method="get" class="lead-form">
                         <div class="form-group">
                             <label for="cluster-nodes" class="form-label">Cluster Nodes</label>
-                            <input type="number" name="cluster-nodes" id="cluster-nodes" class="form-control" step="1" min="1" max="5000" placeholder="1" required>
+                            <input type="number" name="cluster-nodes" id="cluster-nodes" class="form-control" step="1" min="1" max="100" placeholder="1" required>
                         </div>
                         <div class="form-group">
                             <label for="monthly-throughput" class="form-label">Estimated Monthly Throughput</label>
-                            <input type="number" name="monthly-throughput" id="monthly-throughput" class="form-control" min="10" max="5000000" step="1000" placeholder="500">
-                            <span class="input-hint">Min: 10, Max: 5000000</span>
+                            <input type="number" name="monthly-throughput" id="monthly-throughput" class="form-control" min="10" max="1000" step="1000" placeholder="500">
+                            <span class="input-hint">Min: 10, Max: 1000</span>
                         </div>
                         <div class="form-group">
                             <label for="provision-tier" class="form-label">Target Tier Selection</label>
