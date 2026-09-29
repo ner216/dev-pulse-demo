@@ -138,18 +138,32 @@
     border: 1px solid var(--border-color);
     padding: 2rem;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
     transition: transform var(--transition-speed), border var(--transition-speed);
 }
 
 .platform-banner:hover{
-    transform: translateY(-4px);
+    transform: scale(1.04);
     border: 3px solid var(--primary);
 }
 
 .platform-title{
     font-size: 1.25rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     color: var(--text-main);
+}
+
+.platform-icon{
+    font-size: 5rem;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    transition: transform var(--transition-speed);
+}
+
+.platform-icon:hover{
+    transform: scale(1.10);
 }
 
 .platform-description{
@@ -302,19 +316,6 @@
     border-color: var(--primary);
 }
 
-.help-link{
-    text-decoration: none;
-    color: var(--primary);
-    padding: 0.75rem 0rem;
-    transition: color var(--transition-speed);
-    margin-bottom: 0.6rem;
-}
-
-.help-link:hover{
-    background-color: transparent;
-    color: var(--accent-color);
-}
-
 /* Buttons */
 .btn{
     display: inline-flex;
@@ -350,7 +351,7 @@
 
 .btn-primary:hover{
     background-color: var(--accent-color-hover);
-    transform: translateY(-2px);
+    transform: scale(1.08);
 }
 
 .btn-secondary{
