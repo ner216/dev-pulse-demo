@@ -16,7 +16,6 @@
     --surface-color: #FFD84D;
     --background-color: #e0e0e0;
     --form-background-color: #fffdfd;
-    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
     --transition-speed: 0.2;
 
     --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -259,7 +258,7 @@
     flex-grow: 1; /* pushes button to bottum evenly */
 }
 
-.tier-features li {
+.tier-features li{
     margin-bottom: 0.75rem;
 }
 

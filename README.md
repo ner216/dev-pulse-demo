@@ -20,7 +20,7 @@ An introductory web development project consisting of building a website for a h
 
 ## Commit History
 This repo originally held both the ApexPay in-class demo and the DevPulse project. ApexPay demo and other assets have been removed.
-**Below is a list of commits for the DevPulse project assignment 1B specifically:**
+*Below is a list of commits for the DevPulse project **assignment 1B** specifically:*
 
 ```bash
 6011cc4 Resolve skipped heading level, add media section for mobile devices.
